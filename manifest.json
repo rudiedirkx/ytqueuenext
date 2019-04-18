@@ -1,0 +1,26 @@
+{
+	"name": "Video queue NEXT",
+	"description": "Quicker next video on that one video site",
+	"version": "1.4",
+
+	"permissions": [ "storage" ],
+
+	"content_scripts": [ {
+		"all_frames": true,
+		"js": [ "youtubequeuenext.content.js" ],
+		"css": [ "youtubequeuenext.content.css" ],
+		"matches": [ "*://youtube.com/*", "*://www.youtube.com/*" ],
+		"run_at": "document_idle"
+	} ],
+
+	"options_ui": {
+		"page": "options/options.html",
+		"open_in_tab": true
+	},
+
+	"icons": {
+		"128": "images/icon128.png",
+		"48": "images/icon48.png"
+	},
+	"manifest_version": 2
+}

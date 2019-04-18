@@ -1,0 +1,23 @@
+.yt-queue-next-channel-widget input[type="number"]::-webkit-inner-spin-button,
+.yt-queue-next-channel-widget input[type="number"]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+.yt-queue-next-channel-widget {
+	align-self: center;
+}
+.yt-queue-next-channel-widget label.enabled {
+	float: right;
+}
+.yt-queue-next-channel-widget .delay {
+	float: left;
+	margin-right: 1em;
+}
+.yt-queue-next-channel-widget .delay input {
+	width: 1.5em;
+	text-align: center;
+}
+.yt-queue-next-channel-widget input.enabled:not(:checked) ~ .delay {
+	display: none;
+}

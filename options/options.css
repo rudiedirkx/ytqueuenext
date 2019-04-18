@@ -1,0 +1,13 @@
+table {
+	border-collapse: collapse;
+}
+th, td {
+	padding: 5px;
+	border: solid 1px #aaa;
+}
+th {
+	background: #ddd;
+}
+tbody tr:nth-child(odd) {
+	background: #eee;
+}
